@@ -76,8 +76,22 @@ autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 map <buffer> <S-e> :w<CR>:!/usr/bin/env python % <CR>
 set backspace=indent,eol,start
 
-call pathogen#infect("~/.vim/bundle")
-Helptags
+set rtp+=~/.vim/bundle/vundle/
+ call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/gdbmgr'
+Bundle 'vim-scripts/UltiSnips'
+Bundle 'scrooloose/nerdtree'
+Bundle 'drakeguan/vim-vcscommand'
+
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
