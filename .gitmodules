@@ -1,3 +1,6 @@
 [submodule ".vim/bundle/fugitive"]
 	path = .vim/bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-vcscommand"]
+	path = .vim/bundle/vim-vcscommand
+	url = https://github.com/drakeguan/vim-vcscommand.git
